@@ -9,7 +9,17 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import Home from "./component/home.jsx";
+import { Counter } from "./component/counter.jsx";
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+// Export functions
+
+const startTime = Date.now();
+
+setInterval(() => {
+	const currentTime = Date.now();
+	const actualSeconds = Math.floor((currentTime - startTime) / 1000);
+	ReactDOM.render(
+		<Counter seconds={actualSeconds} />,
+		document.querySelector("#app")
+	);
+}, 1000);

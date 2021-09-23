@@ -11,3 +11,30 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.counter {
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.number-container {
+    background-color: #292929;
+    width: 150px;
+    height: 200px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+}
+.number {
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    margin: 0px;
+}
