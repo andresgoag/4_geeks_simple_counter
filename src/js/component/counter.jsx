@@ -11,7 +11,7 @@ export const Counter = props => {
 	const secondsArray = stringSeconds.split("");
 
 	return (
-		<div className="container-fluid d-flex justify-content-center">
+		<div className="container-fluid mt-5 d-flex flex-column align-items-center justify-content-center">
 			<div className="counter">
 				<div className="number-container">
 					<p className="number ">
